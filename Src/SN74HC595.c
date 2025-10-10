@@ -1,4 +1,4 @@
-#include <TN54HC595.h>
+#include <SN74HC595.h>
 
 #include <string.h>
 
