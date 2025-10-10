@@ -17,7 +17,7 @@ This library is used to connect and expand the microcontroller's functionality t
 
 ## Pin Connetion
                                                  -----| |-----  
-                                          Qb(1)  |           | Vcc  
+                                          Qb(1)  |           | Vcc(16)   
                                           Qc(2)  |           | Qa(15)   
                                           Qd(3)  |           | SI(14)  
                                           Qe(4)  |           | /G(13)  
