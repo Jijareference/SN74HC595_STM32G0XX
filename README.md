@@ -16,7 +16,7 @@ This library is used to connect and expand the microcontroller's functionality t
 2. **GND (PIN 8)** - Ground (0V)  
 
 ## PIN CONNECTION  
-                                              -----| |-----  
+                                                 -----| |-----  
                                           Qb(1)  |           | Vcc  
                                           Qc(2)  |           | Qa(15)   
                                           Qd(3)  |           | SI(14)  
