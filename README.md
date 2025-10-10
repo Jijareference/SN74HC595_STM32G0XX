@@ -26,4 +26,9 @@ This library is used to connect and expand the microcontroller's functionality t
                                           Qh(7)  |           | /SCLR(10)  
                                           GND(8) |           | Qh'(9)  
                                                  -------------   
-##Working principle
+## Stages of work(without Additional Functional Inputs)  
+1. The first data bit is transmited to the buffer in the 14 pin.
+2. Eenable Pin 11.
+3. Repeat 8 times to transfer the data byte
+4. Eneable pin 12. At this stage DO at SN54HC595 stat working
+   
