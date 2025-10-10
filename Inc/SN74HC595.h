@@ -28,4 +28,4 @@
 
 void WriteByte(uint16_t Byte);
 
-void TN74SetParam(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin, uint8_t type);
+void SN74SetParam(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin, uint8_t type);
