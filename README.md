@@ -36,4 +36,8 @@ This library is used to connect and expand the microcontroller's functionality t
 1. void TN74SetParam(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin, uint8_t type)  
   This function use to adress your physical Pin with Lib.(Use HAL functions)    
 2. void WriteByte(uint16_t Byte)  
-   This functions use to write a byte in microsheme's buffer and sand it to DO  
+   This function use to write a byte in microsheme's buffer and sand it to DO
+---
+# Working principle
+Every DO has his own bit in the byte. For example, if you need to control second pin, you need to send **0b00000010  
+This lib has 8 constatns to do it easily(PIN1 - PIN8)  
