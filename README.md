@@ -25,4 +25,5 @@ This library is used to connect and expand the microcontroller's functionality t
                                           Qg(6)  |           | SCK(11)  
                                           Qh(7)  |           | /SCLR(10)  
                                           GND(8) |           | Qh'(9)  
-                                                 -------------  
+                                                 -------------   
+##Working principle
