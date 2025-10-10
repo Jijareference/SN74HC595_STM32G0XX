@@ -30,7 +30,7 @@ This library is used to connect and expand the microcontroller's functionality t
 1. The first data bit is transmited to the buffer in the 14 pin.
 2. Enable Pin 11.
 3. Repeat 8 times to transfer the data byte
-4. Eneable pin 12. At this stage DO at SN54HC595 stat working
+4. Eneable pin 12. At this stage DO at SN54HC595 start working
 ***
 ## Functions  
 1. void TN74SetParam(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin, uint8_t type)  
