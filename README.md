@@ -5,12 +5,13 @@ This library is used to connect and expand the microcontroller's functionality t
 ## Functional Inputs
 1. **SI (PIN 14)** - Serial Data Input  
 2. **SCK (PIN 11)** - Shift Register Clock Input  
-3. **RCK (PIN 12)** - Storage Register Clock Input  
+3. **RCK (PIN 12)** - Storage Register Clock Input
+
+## Additional Functional Inputs
+1. **SCLR (PIN 10)** - Shift Register Clear Input (*this input is inverted*)  
+2. **G (PIN 13)** - Output Enable Input (*this input is inverted*)  
 
 ## Power Supply Inputs  
 1. **VCC (PIN 16)** - Positive Supply Voltage  
 2. **GND (PIN 8)** - Ground (0V)  
 
-## Additional Functional Inputs
-1. **SCLR (PIN 10)** - Shift Register Clear Input (*this input is inverted*)  
-2. **G (PIN 13)** - Output Enable Input (*this input is inverted*)  
