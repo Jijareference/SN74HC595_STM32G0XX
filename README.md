@@ -15,7 +15,7 @@ This library is used to connect and expand the microcontroller's functionality t
 1. **VCC (PIN 16)** - Positive Supply Voltage  
 2. **GND (PIN 8)** - Ground (0V)  
 
-## PIN CONNECTION  
+## Pin Connetion
                                                  -----| |-----  
                                           Qb(1)  |           | Vcc  
                                           Qc(2)  |           | Qa(15)   
