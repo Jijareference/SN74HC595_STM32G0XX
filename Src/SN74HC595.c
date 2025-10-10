@@ -14,7 +14,7 @@ static uint16_t SCK_pin;
 
 static uint16_t SI_pin;
 
-void TN54SetParam(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin, uint8_t type){
+void TN74SetParam(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin, uint8_t type){
  if (type == RCK) {
 	 RCK_port = GPIOx;
 	 RCK_pin = GPIO_Pin;
