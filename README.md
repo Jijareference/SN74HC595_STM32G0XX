@@ -41,3 +41,5 @@ This library is used to connect and expand the microcontroller's functionality t
 ## Working principle  
 Each digital output has its own bit in a byte. For example, if you need to control the second pin, you would send **0b00000010**.  
 This library contains 8 constants for convenient control (PIN1 - PIN8).  
+## Warning
+This lib conatins time delay and not recommendet to use in real projects. In the feauture virsions will added non_delay logicl.
