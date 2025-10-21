@@ -46,4 +46,4 @@ This library contains 8 constants for convenient control (PIN1 - PIN8).
 ## Bugs
 If you're passing a byte for the first time, DO doesn't work; you should do it 2-3 times. Pass the data in While() to avoid this problem.
 ## Warning
-This library contains a delay and is not recommended for use in production projects. Non_delay logic will be added in future versions.
+If you have problems with blinks - change the #define DELAY in header file. I use 0.5 us Delay
