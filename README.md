@@ -38,12 +38,12 @@ This library is used to connect and expand the microcontroller's functionality t
   This function use to adress your physical Pin with Lib.   
 2. void WriteByte(uint8_t Byte)  
    This function is used to write a byte into the chip buffer and send it to DO
----
+***
 ## Working principle  
 Each digital output has its own bit in a byte. For example, if you need to control the second pin, you would send **0b00000010**.  
 This library contains 8 constants for convenient control (PIN1 - PIN8).  
 ---
-##Bugs
+## Bugs
 If you're passing a byte for the first time, DO doesn't work; you should do it 2-3 times. Pass the data in While() to avoid this problem.
 ## Warning
 This library contains a delay and is not recommended for use in production projects. Non_delay logic will be added in future versions.
