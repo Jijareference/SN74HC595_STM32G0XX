@@ -27,11 +27,11 @@ This library is used to connect and expand the microcontroller's functionality t
                                           GND(8) |           | Qh'(9)  
                                                  -------------   
 ## Stages of work(without Additional Functional Inputs)  
-1.OFF the RCK Pin to start transmit byte
-2.The first data bit is transmited to the buffer in the SI pin.
-3. Trigger Pin SCK.
-4. Repeat 8 times step 2 and 3 to transfer the data byte
-5. ON yhr RCK pin to end transmit. At this stage DO at SN54HC595 start working
+1.OFF the RCK Pin to start transmit byte  
+2.The first data bit is transmited to the buffer in the SI pin.  
+3. Trigger Pin SCK.  
+4. Repeat 8 times step 2 and 3 to transfer the data byte  
+5. ON yhr RCK pin to end transmit. At this stage DO at SN54HC595 start working  
 ***
 ## Functions  
 1. void TN74SetParam(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin, uint8_t type)  
