@@ -24,7 +24,7 @@
 
 #define PIN8 0b10000000
 
-#define DELAY 2
+#define DELAY 5
 
 void WriteByte(uint8_t Byte);
 
