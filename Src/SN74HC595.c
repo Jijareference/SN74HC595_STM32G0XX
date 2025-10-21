@@ -40,19 +40,18 @@ static void delay_us(uint16_t us) {
 }
 
 void WriteByte(uint16_t Byte){
+	HAL_GPIO_WritePin(RCK_port, RCK_pin, GPIO_PIN_RESET);
 	for (int i = 0 ;i<8; i++){
-		if (Byte & 0b01)
+		if (Byte & 0b80)
 			HAL_GPIO_WritePin(SI_port, SI_pin, GPIO_PIN_SET);
 		else
 			HAL_GPIO_WritePin(SI_port, SI_pin, GPIO_PIN_RESET);
-		delay_us(DELAY);
+		//delay_us(DELAY);
 		HAL_GPIO_WritePin(SCK_port, SCK_pin, GPIO_PIN_SET);
-		delay_us(DELAY);
+		//delay_us(DELAY);
 		HAL_GPIO_WritePin(SCK_port, SCK_pin, GPIO_PIN_RESET);
-		delay_us(DELAY);
-		Byte >>= 0x01;
+		//delay_us(DELAY);
+		Byte <<= 0x01;
 	}
 	HAL_GPIO_WritePin(RCK_port, RCK_pin, GPIO_PIN_SET);
-	delay_us(DELAY);
-	HAL_GPIO_WritePin(RCK_port, RCK_pin, GPIO_PIN_RESET);
 }
