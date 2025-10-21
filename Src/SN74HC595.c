@@ -33,13 +33,7 @@ void SN74SetParam(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin, uint8_t type){
 
 }
 
-static void delay_us(uint16_t us) {
-    for(uint32_t i = 0; i < us * 10; i++) {
-        __NOP();
-    }
-}
-
-void WriteByte(uint16_t Byte){
+void WriteByte(uint8_t Byte){
 	HAL_GPIO_WritePin(RCK_port, RCK_pin, GPIO_PIN_RESET);
 	for (int i = 0 ;i<8; i++){
 		if (Byte & 0b80)
