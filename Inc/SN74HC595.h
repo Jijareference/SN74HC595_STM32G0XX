@@ -26,6 +26,6 @@
 
 #define DELAY 2
 
-void WriteByte(uint16_t Byte);
+void WriteByte(uint8_t Byte);
 
 void SN74SetParam(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin, uint8_t type);
