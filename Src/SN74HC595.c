@@ -50,7 +50,6 @@ void WriteByte(uint8_t Byte){
 		HAL_GPIO_WritePin(SCK_port, SCK_pin, GPIO_PIN_SET);
 		delay_us(DELAY);
 		HAL_GPIO_WritePin(SCK_port, SCK_pin, GPIO_PIN_RESET);
-		delay_us(DELAY);
 		Byte <<= 0x01;
 	}
 	HAL_GPIO_WritePin(RCK_port, RCK_pin, GPIO_PIN_SET);
